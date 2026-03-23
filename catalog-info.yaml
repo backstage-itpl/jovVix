@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: jovvix
+  annotations:
+    github.com/project-slug: backstage-itpl/jovvix
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - url: https://app.jovvix.com
+      title: Quiz Platform
+      icon: dashboard
+      type: quiz-platform
+spec:
+  type: service
+  lifecycle: production
+  owner: user:Shaktizala
