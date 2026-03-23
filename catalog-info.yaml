@@ -13,3 +13,21 @@ spec:
   type: service
   lifecycle: production
   owner: user:Shaktizala
+  providesApis:
+    - jovvix-api
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: jovvix-api # A unique name for the API entity
+  description: Jovvix REST API Docs
+  tags:
+    - rest
+    - jovvix
+spec:
+  type: openapi # Specifies the type as OpenAPI
+  lifecycle: production # The lifecycle stage (e.g., experimental, production)
+  owner: user:Shaktizala # The owner of the API, referring to a Group entity
+  definition:
+    $openapi: ./api/assets/swagger.json # A reference to the actual OpenAPI spec file
