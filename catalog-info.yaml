@@ -4,7 +4,6 @@ metadata:
   name: jovvix
   annotations:
     github.com/project-slug: backstage-itpl/jovvix
-    backstage.io/techdocs-ref: dir:.
   links:
     - url: https://app.jovvix.com
       title: Quiz Platform
