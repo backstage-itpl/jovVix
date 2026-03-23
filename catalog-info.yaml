@@ -26,8 +26,17 @@ metadata:
     - rest
     - jovvix
 spec:
-  type: openapi # Specifies the type as OpenAPI
-  lifecycle: production # The lifecycle stage (e.g., experimental, production)
-  owner: user:Shaktizala # The owner of the API, referring to a Group entity
-  definition:
-    $openapi: ./api/assets/swagger.json # A reference to the actual OpenAPI spec file
+  type: grpc
+  lifecycle: experimental
+  owner: guests
+  system: examples
+  definition: |
+    syntax = "proto3";
+
+    service Exampler {
+      rpc Example (ExampleMessage) returns (ExampleMessage) {};
+    }
+
+    message ExampleMessage {
+      string example = 1;
+    };
