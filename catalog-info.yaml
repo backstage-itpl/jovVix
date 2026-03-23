@@ -26,17 +26,8 @@ metadata:
     - rest
     - jovvix
 spec:
-  type: grpc
-  lifecycle: experimental
-  owner: guests
-  system: examples
-  definition: |
-    syntax = "proto3";
-
-    service Exampler {
-      rpc Example (ExampleMessage) returns (ExampleMessage) {};
-    }
-
-    message ExampleMessage {
-      string example = 1;
-    };
+  type: openapi
+  lifecycle: production
+  owner: user:Shaktizala
+  definition:
+    $text: ./api/assets/swagger.json
