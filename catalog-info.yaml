@@ -12,7 +12,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: user:Shaktizala
+  owner: guests
   providesApis:
     - jovvix-api
 
@@ -28,6 +28,6 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: user:Shaktizala
+  owner: guests
   definition:
     $text: ./api/assets/swagger.json
