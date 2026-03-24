@@ -4,6 +4,7 @@ metadata:
   name: jovvix
   annotations:
     github.com/project-slug: backstage-itpl/jovvix
+    backstage.io/kubernetes-id: kubernetes-component
   links:
     - url: https://app.jovvix.com
       title: Quiz Platform
